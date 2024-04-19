@@ -1,0 +1,13 @@
+body {
+    background-color: aqua; text-align: center;
+    color: black;
+}
+#campo1{
+    text-align: center;
+}
+#campo2{
+    text-align: center;
+}
+#resposta{
+    font-size: 100px; 
+}

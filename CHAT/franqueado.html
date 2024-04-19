@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Empresa - Acesso Franqueado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>4PAY SOLUÇÕES ACESSO AO FRANQUEADO</h1>
+    </header>
+    
+    <nav id="menu">
+        <ul>
+            <li><a href="#">Últimas Atualizações</a></li>
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#" onclick="toggleFranqueadoMenu()">Acesso Franqueado</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="content">
+            <!-- Conteúdo do site aqui -->
+            <p>Bem-vindo ao nosso sistema de acesso para franqueados.</p>
+            <!-- Exibir menu exclusivo para franqueados -->
+            <nav id="franqueado-menu" style="display: none;">
+                <ul>
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#">Gráficos</a></li>
+                    <li><a href="#">Informações Cruzadas</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Minha Empresa</p>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        // Função para alternar a exibição do menu exclusivo para franqueados
+        function toggleFranqueadoMenu() {
+            var menu = document.getElementById('franqueado-menu');
+            if (menu.style.display === 'none') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

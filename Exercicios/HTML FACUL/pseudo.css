@@ -1,0 +1,13 @@
+.imagem{
+    background: url('gato2.jpg') no-repeat;
+    width: 500px;
+    height: 500px;
+    display: block;
+    background-size: contain;
+}
+.imagem:hover{
+    background-position: 0px 5px;
+}
+.imagem:active{
+    background-position: 50px 50px;
+}
