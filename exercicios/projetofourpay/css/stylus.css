@@ -6,10 +6,6 @@
 body {
     background-color: #627DA0;
 }
-body p {
-    padding: 10px 10px 20px 0cm;
-}
-
 nav {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -17,16 +13,17 @@ nav {
     text-align: center;
 }
 nav a {
-    padding: 2px 10px;
+    padding: 20px 30px 20px 30px;
     font-weight: lighter;
     color: rgb(0, 0, 0);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 nav a:hover {
     background-color: #2B6CA3;
-    padding: 20px 10px 20px 10px;
     color: white;
 }
+
 header {
     padding: 30px;
     background-image: url('../imagens/fundo header.jpg');
@@ -44,6 +41,7 @@ header h2 {
     color: white;
     font-weight: normal;
     padding-bottom: 30px;
+    font-size: 2em;
 }
 header p {
     color: white;
@@ -68,49 +66,52 @@ header img {
     max-width: 250px;
 }
 main {
-    max-width: 900px;
-    min-width: 300px;
     background-color: white;
-    margin: auto;
-    padding: 20px;
-    box-shadow: 5px 3px 3px 3px rgba(0, 0, 0, 0.514);
 }
-div.video {
-    background-color: #1a5c37;
-    padding-bottom: 56.25%;
-    height: 0;
+.video {
+    display: flex;
     position: relative;
-    overflow: hidden;    
-    margin-bottom: 10px;
-}
-div iframe {
-    position: absolute;
-    top: 0; 
-    left: 0;
     width: 100%;
-    height: 100%;
+    max-width: 600px; /* Defina o tamanho máximo que deseja para o vídeo */
+    margin: 0 auto; /* Isso centralizará a div horizontalmente */
+    
 }
 
-article h2 {
-    padding: 0px 5px 5px 0px;
-    font-size: 1.8em;
+.video iframe {
+    display: block;
+    width: 100%;
+    
 }
 div.container {
+    max-width: 1000px;
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 20px; /* Espaçamento entre as colunas */
     min-width: none; /* Largura máxima do conteúdo */
     margin: 0 auto; /* Centralizar o conteúdo */
     padding: 10px;
+    justify-items: center;
+    
 }
 div.text {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     align-content: center;
     max-width: 400px;
+    justify-content: center;
+    align-items: center;
 }
-.container img {
-    width: 100%;
-    min-width: 250px;
+div.text > h2 {
+    font-size: 1.8em;
+    padding-bottom: 30px;
+}
+div.text > p {
+    padding-bottom: 20px;
+}
+
+div.text > a {
+    width: fit-content;
 }
 
 article a {
@@ -124,11 +125,25 @@ article a {
 article a:hover {
     background-color:#273B7B;
 }
-div.troca {
-    margin: -10px -0px -10px 0px;
+div.troca1 {
+    padding: 20px;
+    text-align: center;
+    background-color: #c8d6e9;
+    
+}
+div.troca1 > a {
+    margin: 30px;
 }
 
-
+div.troca1 > h2 {
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    font-size: 2em;
+}
+div.troca1 > p {
+    
+    
+}
 
 footer {
     background-color: #ececec;
