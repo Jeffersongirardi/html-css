@@ -51,8 +51,7 @@ section {
     min-width: 300px;
     max-width: 400px;
     margin: auto;    
-    text-align: center;
-    
+    text-align: center;    
 }
 
 section.normal {
@@ -61,7 +60,7 @@ section.normal {
 }
 section.imagem {
     background-color: rgb(68, 62, 62);
-    color: white;
+    color: white;    
 }
 section.imagem > p {
    
