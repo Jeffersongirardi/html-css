@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO</title>
+    <style>
+        table.simples {
+            width: 400px;
+            border-collapse: collapse;
+            font-size: 2em;          
+            text-align: center;  
+        }
+        td {
+            border: 1px dashed black;
+        }
+        table.lista {
+            width: 500px;
+            border-collapse: collapse;
+            font-size: 1em;  
+        }
+        table.lista, .lista th {
+            border: 1px dashed black;
+            padding: 10px;            
+        }
+   
+
+    </style>
+</head>
+<body>
+    
+    <table class="simples">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>            
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>            
+        </tr>
+        <tr>
+            
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>            
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>  
+            <td>15</td>                                    
+        </tr>
+    </table>
+    <br><br><br>
+    <table class="simples">
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>   
+            <td>F</td>          
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>   
+            <td>I</td>            
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>K</td>   
+            <td>L</td>         
+        </tr>
+        <tr>
+            <td colspan="4">M</td>
+        </tr>
+    </table>
+    <br><br><br>
+    
+    <caption>Mesclagem de células</caption>
+    <table class="lista">
+        <thead>
+            <th scope="col">Grupo</th>
+            <th scope="col">Nomes</th>
+            <th colspan="3" scope="colgroup">Filmes</th>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>inception</td>
+                <td>batman</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Bruno mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnépsia</td>
+                <td>O Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-e</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabio Mota</td>
+                <td>Star Wars V</td>
+                <td>Taxi Driver</td>
+                <td>Toy Store</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <th colspan="4" scope="row">Total</th>
+                    <td>1000</td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+    <br><br><br>
+
+  
+</body>
+</html>
