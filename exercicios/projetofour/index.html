@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal - Administrador</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Nome da Empresa</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Relatórios</a></li>
+                    <li><a href="#">Configurações</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="summary">
+            <div class="container">
+                <h2>Resumo</h2>
+                <div class="summary-cards">
+                    <div class="card">
+                        <h3>Vendas Mensais</h3>
+                        <p>R$ 150.000</p>
+                    </div>
+                    <div class="card">
+                        <h3>Clientes Ativos</h3>
+                        <p>350</p>
+                    </div>
+                    <div class="card">
+                        <h3>Produtos Vendidos</h3>
+                        <p>1200</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="charts">
+            <div class="container">
+                <h2>Gráficos</h2>
+                <div class="chart-container">
+                    <canvas id="salesChart"></canvas>
+                </div>
+            </div>
+        </section>
+        <section class="activity">
+            <div class="container">
+                <h2>Últimas Atividades</h2>
+                <ul>
+                    <li>Novo pedido de <strong>Cliente X</strong></li>
+                    <li>Atualização de preço em <strong>Produto Y</strong></li>
+                    <li>Novo registro de <strong>Cliente Z</strong></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="contact-info">
+                <p>Contato: exemplo@empresa.com</p>
+            </div>
+            <div class="legal-links">
+                <a href="#">Política de Privacidade</a> | <a href="#">Termos de Serviço</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
