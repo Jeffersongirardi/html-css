@@ -6,7 +6,11 @@ body {
 }
 
 .container {
-    width: 400px;
+    width: 400px;test('Body should have #f9f9f9 background color', () => {
+      const body = document.querySelector('body');
+      expect(body.style.backgroundColor).toBe('#f9f9f9');
+    });
+    
     margin: 200px auto;
     background-color: #fff;
     padding: 20px;
