@@ -37,7 +37,7 @@ header {
   text-decoration: underline;
 }
 
-/* Navegação Secundária */
+/* Navegação Secundária do meu portifolio de outros cursos*/
 nav {
   display: flex;
   justify-content: center;
@@ -211,7 +211,7 @@ footer.rodape strong {
   color: #00d0ff;
 }
 
-/* Animação leve */
+/* Animação */
 @keyframes fadeIn {
   from {
     opacity: 0;
