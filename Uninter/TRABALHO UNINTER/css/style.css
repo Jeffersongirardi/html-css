@@ -1,0 +1,225 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navegação Principal */
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* Navegação Secundária */
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #171718;
+  padding: 10px 20px;
+  margin: 5px;
+  border: 1px solid #2a5a81;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  min-width: 120px;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #005fa3;
+  color: #fff;
+}
+
+/* Conteúdo Principal */
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Controle de Seções */
+.secao {
+  display: none;
+}
+
+.secao.ativa {
+  display: block;
+}
+
+/* Seção Sobre */
+.sobre-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sobre-texto {
+  flex: 1 1 60%;
+  text-align: left;
+}
+
+.sobre-imagem {
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+.sobre-imagem img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção Formação */
+.formacao-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formacao-item {
+  background-color: #ffffff;
+  padding: 15px;
+  border-left: 5px solid #0077cc;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.formacao-item h3 {
+  margin-top: 0;
+  color: #0077cc;
+}
+
+/* Seção Contato */
+.contato-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.6s ease-in-out;
+  text-align: center;
+}
+
+.contato-container h2 {
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+.contato-container p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-contato input,
+.form-contato textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+.form-contato button {
+  background-color: #0077cc;
+  color: white;
+  padding: 12px;
+  border: none;
+  font-size: 1em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-contato button:hover {
+  background-color: #005fa3;
+}
+
+/* Botões Genéricos */
+button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Seção Portfólio */
+#portfolio {
+  text-align: center;
+}
+
+/* Rodapé */
+footer.rodape {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+footer.rodape strong {
+  color: #00d0ff;
+}
+
+/* Animação leve */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
