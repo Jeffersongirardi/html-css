@@ -69,6 +69,7 @@ main {
 /* Controle de Seções */
 .secao {
   display: none;
+  text-align: center;
 }
 
 .secao.ativa {
@@ -78,10 +79,14 @@ main {
 /* Seção Sobre */
 .sobre-container {
   display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20p;
   flex-direction: column;
   gap: 20px;
   align-items: center;
   flex-wrap: wrap;
+  text-align: justify;
 }
 
 .sobre-texto {
@@ -95,7 +100,7 @@ main {
 }
 
 .sobre-imagem img {
-  max-width: 30%;
+  max-width: 40%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -104,6 +109,9 @@ main {
 /* Seção Formação */
 .formacao-container {
   display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20p;
   flex-direction: column;
   gap: 20px;
 }
