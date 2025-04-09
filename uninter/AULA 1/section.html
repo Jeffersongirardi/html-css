@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Jefferson Girardi</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="#" onclick="mostrarSecao('sobre')">Sobre Mim</a></li>
+          <li><a href="#" onclick="mostrarSecao('formacao')">Formação</a></li>
+          <li><a href="#" onclick="mostrarSecao('portfolio')">Portfólio</a></li>
+          <li><a href="#" onclick="mostrarSecao('contato')">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="sobre" class="secao ativa">
+        <h2>Sobre Mim</h2>
+        <div class="sobre-container">
+          <div class="sobre-texto">
+            <p>
+              Olá! Me chamo <strong>Jefferson Girardi</strong>, sou empresário
+              desde muito jovem e sempre tive um espírito empreendedor. Ao longo
+              dos anos, venho desenvolvendo habilidades nas áreas de tecnologia,
+              negócios e comunicação, buscando constantemente novas
+              oportunidades e aprendizados.
+            </p>
+
+            <p>
+              Tenho uma <strong>família linda e unida</strong>, que é minha base
+              e principal fonte de motivação. Cada conquista é dividida com
+              eles, e acredito que o apoio familiar é essencial para superar os
+              desafios do dia a dia e manter o equilíbrio na vida.
+            </p>
+
+            <p>
+              Além do mundo dos negócios, tenho grande paixão por música. Sou
+              vocalista de uma banda de rock, onde posso expressar minha
+              criatividade e energia no palco. A música é uma das minhas maiores
+              fontes de inspiração e motivação.
+            </p>
+
+            <p>
+              Também sou gamer nas horas vagas — gosto de desafios, de
+              estratégias e da interação que os jogos proporcionam. Acredito que
+              o universo dos games desenvolve raciocínio rápido, foco e até
+              trabalho em equipe.
+            </p>
+
+            <p>
+              Valorizo muito o conhecimento. Estou sempre estudando algo novo,
+              seja por meio de cursos, livros, vídeos ou trocando experiências
+              com outras pessoas. Acredito que aprender é um processo contínuo e
+              essencial tanto para a vida pessoal quanto profissional.
+            </p>
+
+            <p>
+              Meu objetivo é crescer como pessoa e profissional, sempre buscando
+              inovação, equilíbrio e boas conexões ao longo da jornada.
+            </p>
+          </div>
+
+          <div class="sobre-imagem">
+            <img src="imgs/banda.jpeg" alt="Foto de Jefferson Girardi" />
+          </div>
+        </div>
+      </section>
+
+      <section id="formacao" class="secao">
+        <h2>Formação</h2>
+        <div class="formacao-container">
+          <div class="formacao-item">
+            <h3>Diretor na 4PAY Soluções</h3>
+            <p>
+              Como diretor na 4PAY Soluções, lidero estratégias e operações,
+              focando em soluções inovadoras para pagamentos e serviços
+              financeiros.
+            </p>
+          </div>
+          <div class="formacao-item">
+            <h3>Master Franqueado Bin from Fiserv</h3>
+            <p>
+              Atuo como Master Franqueado da Bin, uma empresa da Fiserv, líder
+              global em tecnologia de pagamentos, contribuindo para a expansão e
+              fortalecimento da marca no mercado brasileiro.
+            </p>
+          </div>
+          <div class="formacao-item">
+            <h3>Experiência em Empreendedorismo</h3>
+            <p>
+              Minha trajetória como empresário foi fundamental para aprimorar
+              minha atuação no mercado, desenvolvendo habilidades em gestão e
+              inovação.
+            </p>
+          </div>
+          <div class="formacao-item">
+            <h3>Formação Acadêmica</h3>
+            <p>
+              Engenharia de Software - Uninter<br />
+              Gestão Comercial - Universidade Positivo<br />
+              Logística - Júlio Mesquita<br />
+              Idiomas: Português (nativo), Inglês (intermediário) Wizard
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="secao">
+        <h2>Portfólio</h2>
+        <p>Projetos realizados:</p>
+        <nav>
+          <a
+            href="https://jeffersongirardi.github.io/html-css/exercicios/projetosocial/"
+            target="_blank"
+            >Projeto Redes Sociais</a
+          >
+          <a
+            href="https://jeffersongirardi.github.io/html-css/desafios/desafioandroidalone/"
+            target="_blank"
+            >Site Android 2</a
+          >
+          <a
+            href="https://jeffersongirardi.github.io/html-css/exercicios/projetofourpay/"
+            target="_blank"
+            >Site FOURPAY</a
+          >
+          <a
+            href="https://jeffersongirardi.github.io/html-css/desafios/desafio12/"
+            target="_blank"
+            >Cordel</a
+          >
+        </nav>
+      </section>
+
+      <section id="contato" class="secao contato-container">
+        <h2>Fale Comigo</h2>
+        <p>Tem uma ideia, sugestão ou oportunidade? Entre em contato abaixo!</p>
+
+        <form class="form-contato">
+          <label for="nome">Seu nome</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            required
+            placeholder="Digite seu nome completo"
+          />
+
+          <label for="email">Seu e-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="seu@email.com"
+          />
+
+          <label for="mensagem">Mensagem</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="5"
+            required
+            placeholder="Escreva sua mensagem aqui..."
+          ></textarea>
+
+          <button type="submit">Enviar Mensagem</button>
+        </form>
+      </section>
+    </main>
+
+    <script>
+      function mostrarSecao(id) {
+        const secoes = document.querySelectorAll(".secao");
+        secoes.forEach((secao) => {
+          secao.classList.remove("ativa");
+        });
+        document.getElementById(id).classList.add("ativa");
+      }
+    </script>
+
+    <footer class="rodape">
+      <p>
+        Site desenvolvido por <strong>Jefferson Girardi</strong> &copy; 2025
+      </p>
+    </footer>
+  </body>
+</html>
