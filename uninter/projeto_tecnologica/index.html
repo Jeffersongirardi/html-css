@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TecnoLógica - Tudo sobre tecnologia</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div id="header">
+      <div id="logo">
+        <h1>Tecno<span class="white">Lógica</span></h1>
+      </div>
+
+      <div id="menu">
+        <a href="index.html">Home</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="smartphones.html">Smartphones</a>
+      </div>
+    </div>
+
+    <div id="content">
+      <div id="posts">
+        <!-- postagem 1 -->
+        <div class="post">
+          <h2>Seria esse o notebook dos seus sonhos?</h2>
+          <span class="data-post">postado 04 setembro 2024</span>
+          <img class="img-post" src="imagens/tecnologia01.png" />
+          <p>
+            Design moderno, desempenho poderoso e bateria de longa duração. Esse
+            notebook reúne tudo o que você precisa: velocidade, leveza e
+            tecnologia de ponta para te acompanhar em qualquer desafio do dia.
+          </p>
+          <div class="mais-conteudo" style="display: none">
+            <p>
+              Com tela de alta resolução, teclado retroiluminado e armazenamento
+              SSD de alta velocidade, ele é ideal tanto para tarefas simples
+              quanto para edições de vídeo, design gráfico e até jogos leves. O
+              sistema de resfriamento inteligente garante desempenho estável
+              mesmo em uso intenso. Outro destaque é a construção robusta e ao
+              mesmo tempo leve, perfeita para quem vive em movimento. E para
+              quem se preocupa com conectividade, ele vem com portas USB-C,
+              HDMI, Wi-Fi de última geração e Bluetooth 5.2.
+            </p>
+          </div>
+          <a
+            href="#"
+            class="leia-mais"
+            onclick="mostrarMais(this); return false;"
+            >Leia mais</a
+          >
+        </div>
+
+        <!-- postagem 2 -->
+        <div class="post">
+          <h2>Smartphone: Qual o tamanho ideal?</h2>
+          <span class="data-post">postado 04 setembro 2024</span>
+          <img class="img-post" src="imagens/smartphone01.png" />
+          <p>
+            Na hora de escolher um smartphone, o tamanho da tela faz toda a
+            diferença. Telas maiores são perfeitas para ver vídeos, jogar e
+            trabalhar com mais conforto.
+          </p>
+          <div class="mais-conteudo" style="display: none">
+            <p>
+              Por outro lado, smartphones menores são ideais para quem busca
+              praticidade, usa o aparelho com uma mão só e quer algo que caiba
+              bem no bolso. Telas entre 5.5 e 6.1 polegadas são um meio-termo
+              popular. Já os modelos com mais de 6.5 polegadas costumam agradar
+              quem consome muito conteúdo, faz videoconferências ou trabalha com
+              o celular.
+            </p>
+            <p>
+              Vale lembrar que o tamanho do celular também afeta sua bateria,
+              peso e ergonomia. Antes de decidir, pense no que você realmente
+              precisa: portabilidade ou conforto visual? Com tantas opções no
+              mercado, você com certeza encontrará o equilíbrio ideal.
+            </p>
+          </div>
+          <a
+            href="#"
+            class="leia-mais"
+            onclick="mostrarMais(this); return false;"
+            >Leia mais</a
+          >
+        </div>
+      </div>
+
+      <div id="right-side">
+        <div class="content-right">
+          <h3>Postagens recentes</h3>
+
+          <div class="post-right">
+            <p>
+              <strong>Seria esse o notebook dos seus sonhos?</strong> Conheça um
+              modelo que une design elegante, alto desempenho e bateria
+              duradoura. Ideal para quem busca produtividade e estilo no dia a
+              dia.
+            </p>
+            <a href="#">Leia mais</a>
+          </div>
+
+          <div class="post-right">
+            <p>
+              <strong>Smartphone: Qual o tamanho ideal?</strong> Descubra como o
+              tamanho da tela pode impactar sua experiência e qual opção melhor
+              se encaixa no seu estilo de vida.
+            </p>
+            <a href="#">Leia mais</a>
+          </div>
+
+          <div class="post-right" style="border-bottom: none">
+            <p>
+              <strong>5 dicas para aumentar a vida útil da sua bateria</strong>
+              Pequenos hábitos fazem grande diferença na durabilidade do seu
+              aparelho. Veja como preservar o desempenho por mais tempo.
+            </p>
+            <a href="#">Leia mais</a>
+          </div>
+        </div>
+
+        <div class="content-right">
+          <h3>Categorias</h3>
+
+          <a href="#">Tecnologia</a><br />
+          <a href="jogos.html">Jogos</a><br />
+          <a href="smartphones.html">Smartphones</a><br />
+        </div>
+      </div>
+
+      <div id="footer">
+        Todos os direitos reservados - Jefferson Girardi - Site criado para
+        estudos da Universidade Uninter
+      </div>
+    </div>
+
+    <!-- JavaScript para "Leia mais" -->
+    <script>
+      function mostrarMais(link) {
+        const post = link.parentElement;
+        const maisTexto = post.querySelector(".mais-conteudo");
+
+        if (maisTexto.style.display === "none") {
+          maisTexto.style.display = "block";
+          link.innerText = "Mostrar menos";
+        } else {
+          maisTexto.style.display = "none";
+          link.innerText = "Leia mais";
+        }
+      }
+    </script>
+  </body>
+</html>
