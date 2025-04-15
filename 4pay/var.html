@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variáveis</title>
+    <style>
+      :root {
+        --dourado: #ffd700;
+        --branco: #ffffff;
+        --preto: #000000;
+      }
+
+      body {
+        max-width: 800px;
+        margin: auto;
+        background-color: var(--dourado);
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        text-align: justify;
+      }
+
+      h1 {
+        color: var(--preto);
+        text-align: center;
+      }
+
+      h2 {
+        color: var(--dourado);
+      }
+
+      .container {
+        border-radius: 10px;
+        padding: 20px;
+        background-color: var(--branco);
+        margin-bottom: 30px;
+      }
+
+      button {
+        background-color: var(--dourado);
+        color: var(--branco);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px;
+      }
+
+      button:hover {
+        background-color: var(--branco);
+        color: var(--dourado);
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 20px;
+        padding: 10px 0px;
+        display: block;
+      }
+
+      img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s;
+      }
+
+      /* Container de transição */
+      #container1 {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      #container1:hover .box {
+        width: 300px;
+      }
+
+      .box {
+        width: 100px;
+        height: 30px;
+        background-color: #000;
+        color: #fff;
+        margin: 10px 0;
+        text-align: center;
+        line-height: 30px;
+        transition: width 2s;
+      }
+
+      #div1 {
+        transition-timing-function: linear;
+      }
+      #div2 {
+        transition-timing-function: ease;
+      }
+      #div3 {
+        transition-timing-function: ease-in;
+      }
+      #div4 {
+        transition-timing-function: ease-out;
+      }
+      #div5 {
+        transition-timing-function: linear; /* linear-in não é válido */
+      }
+      #div6 {
+        transition-timing-function: linear; /* linear-out não é válido */
+      }
+      #div7 {
+        transition-timing-function: ease-in-out;
+      }
+      #div8 {
+        transition-timing-function: ease-out; /* ease-out-in não é válido */
+      }
+      #div9 {
+        transition-timing-function: step-start;
+      }
+      #div10 {
+        transition-timing-function: step-end;
+      }
+      #div11 {
+        transition-timing-function: ease; /* spring não é suportado em CSS puro */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Utilizando a função tipo var()</h1>
+    <div class="container">
+      <h2>Variáveis</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi aliquam
+        dicta reiciendis. Quasi maiores ipsum necessitatibus atque ullam magnam
+        doloribus, debitis tempore ad omnis iure inventore voluptates
+        laudantium, tenetur ipsam ducimus voluptas dolor deserunt deleniti.
+      </p>
+      <p>
+        Dolores sapiente facere deleniti quas eligendi consectetur velit nulla
+        natus nostrum, officiis iure delectus explicabo laboriosam laborum quod
+        aspernatur hic. Illo ex provident nisi fugit. Eligendi delectus animi
+        recusandae suscipit ad itaque eum.
+      </p>
+      <p>
+        Magni praesentium odio autem quos laborum pariatur quia est officia
+        saepe quasi id dolorum beatae iusto incidunt ut perspiciatis debitis
+        ullam. Distinctio velit laboriosam voluptates error, eligendi dolorem
+        blanditiis reiciendis quibusdam earum?
+      </p>
+      <p>
+        <button>Sim</button>
+        <button>Não</button>
+      </p>
+    </div>
+
+    <div id="container1">
+      <img src="img/game03.png" alt="Exemplo de imagem" />
+      <h1>Exemplos da propriedade transition-timing-function</h1>
+      <div class="box" id="div1">LINEAR</div>
+      <div class="box" id="div2">EASE</div>
+      <div class="box" id="div3">EASE-IN</div>
+      <div class="box" id="div4">EASE-OUT</div>
+      <div class="box" id="div5">LINEAR-IN</div>
+      <div class="box" id="div6">LINEAR-OUT</div>
+      <div class="box" id="div7">EASE-IN-OUT</div>
+      <div class="box" id="div8">EASE-OUT-IN</div>
+      <div class="box" id="div9">STEP-START</div>
+      <div class="box" id="div10">STEP-END</div>
+      <div class="box" id="div11">SPRING</div>
+    </div>
+  </body>
+</html>
