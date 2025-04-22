@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leonardo da Vinci</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        display: grid;
+      }
+      header {
+        background-color: rgb(18, 33, 83);
+        grid-column-start: 1;
+        grid-column-end: 12;
+        color: white;
+        text-align: center;
+      }
+      .menu {
+        background-color: azure;
+        grid-column-start: 6;
+        grid-column-end: 12;
+        justify-content: center;
+        gap: 20px;
+      }
+      .imagem_leo {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      .principal {
+        grid-column-start: 4;
+        grid-column-end: 12;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: justify;
+      }
+      footer {
+        grid-column-start: 1;
+        grid-column-end: 12;
+        background-color: rgb(18, 33, 83);
+        color: white;
+        text-align: center;
+      }
+      ul {
+        list-style-type: none;
+        color: blue;
+      }
+      a,
+      a:link {
+        text-decoration: none;
+        padding: 8px 16px;
+        border: solid gray 1px;
+      }
+      li {
+        float: left;
+      }
+      a:hover {
+        background-color: cadetblue;
+        color: white;
+      }
+      .img {
+        border: 1px solid white;
+        border-radius: 1rem;
+        padding: 0.8rem;
+        margin-bottom: 0.8rem;
+      }
+      .img img {
+        width: 125px;
+        height: 115px;
+      }
+      @media only screen and (max-width: 767px) {
+        .wrapper {
+          grid-column-start: 1;
+          grid-column-end: 1;
+        }
+        .imagem_leo {
+          grid-column-start: 1;
+          grid-column-end: 1;
+        }
+        .principal {
+          grid-column-start: 1;
+          grid-column-end: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container">
+      <h1>Biografia Leonardo da Vinci</h1>
+    </header>
+    <nav class="container menu">
+      <ul>
+        <li><a href="#">Biografia</a></li>
+        <li><a href="#">Obras</a></li>
+        <li><a href="#">Curiosidades</a></li>
+      </ul>
+    </nav>
+    <div class="container wrapper">
+      <aside class="imagem_leo">
+        <img src="vinci.jpeg" alt="Leonardo" />
+        <div class="infos">
+          <p><strong>Ocupação:</strong> Pintor Italiano</p>
+          <p><strong>Data de nascimento:</strong> 15 de abril de 1452</p>
+          <p><strong>Data de morte:</strong> 2 de maio de 1519</p>
+        </div>
+      </aside>
+      <section class="principal">
+        <h1>Leonardo da Vinci</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat qui
+          rerum, ipsa voluptatem eum temporibus perspiciatis! Cumque, eligendi
+          praesentium in quidem explicabo sint, maxime alias ratione dicta vero
+          voluptate nobis odio aliquid doloremque ipsum esse assumenda autem
+          officiis magni? Quasi et tempora exercitationem numquam esse in
+          impedit non, commodi rem repellat, excepturi deserunt saepe at enim
+          nemo est, a accusamus unde maxime perspiciatis. Sit quam reiciendis
+          consequatur? Fugiat, vel! Eum quam vero totam veniam dolor. Velit
+          dicta aliquid odit fugiat est perferendis perspiciatis, veritatis
+          magni cumque eligendi sint maxime ut soluta aut debitis, eum rem
+          voluptate odio, nam totam. Ullam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum porro
+          eius dicta sapiente animi totam libero provident at. Impedit
+          laboriosam aliquam itaque doloremque nostrum! Sit aliquid id velit
+          ducimus omnis.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos
+          ullam quibusdam perspiciatis culpa praesentium vero eveniet
+          accusantium ab. Vero molestiae veritatis sequi ea sit neque magnam
+          impedit modi tempora distinctio aperiam ducimus, enim repellat eaque,
+          unde, numquam reprehenderit iure consectetur. Quibusdam, non facilis
+          ullam unde, illo nulla earum dignissimos illum voluptates alias
+          cupiditate voluptas consectetur. Tenetur dolore pariatur ipsam
+          voluptatibus nam molestias dignissimos, commodi corporis soluta quos
+          minus aperiam vero unde harum repellat odit suscipit perspiciatis
+          saepe! Corporis deleniti, praesentium dolor est odit culpa ut
+          obcaecati omnis cum autem atque ea cumque. Adipisci incidunt dolore
+          cumque, enim voluptatum quidem illum iure consequuntur, aliquam sed
+          error? Est, ducimus deserunt? Commodi odio at error ad sequi fugiat
+          deleniti iusto magnam necessitatibus eligendi nam quam ducimus quos
+          impedit dignissimos animi accusantium amet sed, neque dolore
+          veritatis, quis, molestiae quisquam nihil. Nemo non quia reprehenderit
+          facere nulla delectus iure, quod in labore illum asperiores reiciendis
+          harum commodi dolor. Id repellat animi temporibus veritatis labore
+          nulla distinctio molestiae, doloribus hic assumenda soluta, optio
+          illum voluptatum quisquam. Laborum at est quaerat facilis ipsam,
+          consectetur fuga dolores pariatur labore, dolorum velit asperiores in
+          temporibus nihil similique ea deserunt sequi maxime! Obcaecati rem
+          eligendi beatae voluptatibus ullam.
+        </p>
+      </section>
+    </div>
+    <footer>Desenvolvido por Jefferson Girardi através da Uninter</footer>
+  </body>
+</html>
