@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testando grid</title>
+    <style>
+      html,
+      body {
+        font-size: 2em;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "header header"
+          "menu content"
+          "footer footer";
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto 1fr auto;
+        gap: 10px;
+      }
+
+      .header {
+        grid-area: header;
+        background: navy;
+      }
+      .menu {
+        grid-area: menu;
+        background: lightblue;
+      }
+      .content {
+        grid-area: content;
+        background: lightgreen;
+      }
+      .footer {
+        grid-area: footer;
+        background: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="header">Cabeçalho</div>
+      <div class="menu">Menu</div>
+      <div class="content">Conteúdo</div>
+      <div class="footer">Rodapé</div>
+    </div>
+  </body>
+</html>
