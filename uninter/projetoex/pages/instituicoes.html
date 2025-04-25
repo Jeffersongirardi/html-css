@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instituições - Conexões Solidárias</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Conexões Solidárias</h1>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="doadores.html">Seja um Doador</a>
+        <a href="instituicoes.html" class="active">Instituições</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Receba doações e fortaleça sua missão</h2>
+    </section>
+
+    <section class="content">
+      <h3>Cadastre sua Instituição</h3>
+      <p>
+        Se você representa uma instituição de caridade, cadastre-se para receber
+        doações de forma organizada e transparente.
+      </p>
+
+      <form id="form-instituicoes">
+        <label for="nome-inst">Nome da Instituição:</label>
+        <input type="text" id="nome-inst" name="nome-inst" required />
+
+        <label for="email-inst">Email:</label>
+        <input type="email" id="email-inst" name="email-inst" required />
+
+        <label for="necessidade">Descreva as principais necessidades:</label>
+        <textarea
+          id="necessidade"
+          name="necessidade"
+          rows="4"
+          required
+        ></textarea>
+
+        <button type="submit">Cadastrar Instituição</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Conexões Solidárias. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

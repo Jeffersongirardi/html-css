@@ -25,6 +25,8 @@ header {
   background-color: rgb(18, 33, 83);
   text-align: center;
   color: white;
+  font-size: 2em;
+  font-weight: lighter;
 }
 
 .menu {
@@ -92,8 +94,8 @@ li {
   max-width: 200px;
 }
 .img img {
-  width: 200px;
-  height: 125px;
+  width: 180px;
+  height: 100px;
 }
 
 .card {
@@ -118,7 +120,7 @@ li {
 }
 .principal h1 {
   font-family: "Georgia", serif;
-  font-size: 32px;
+  font-size: 20px;
   margin-bottom: 25px;
   color: #333;
 }
