@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - Jefferson Girardi</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Jefferson Girardi</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre Mim</a></li>
+          <li><a href="formacao.html">Formação</a></li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="contato" class="secao contato-container">
+        <h2>Fale Comigo</h2>
+        <p>Tem uma ideia, sugestão ou oportunidade? Entre em contato abaixo!</p>
+
+        <form class="form-contato">
+          <label for="nome">Seu nome</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            required
+            placeholder="Digite seu nome completo"
+          />
+
+          <label for="email">Seu e-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="seu@email.com"
+          />
+
+          <label for="mensagem">Mensagem</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="5"
+            required
+            placeholder="Escreva sua mensagem aqui..."
+          ></textarea>
+
+          <button type="submit">Enviar Mensagem</button>
+        </form>
+      </section>
+    </main>
+    <footer class="rodape">
+      <p>Desenvolvido por Jefferson Girardi &copy; 2025</p>
+    </footer>
+  </body>
+</html>

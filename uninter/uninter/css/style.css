@@ -1,12 +1,12 @@
 html {
   height: 100%;
-  max-width: 80vw;
   margin: 0 auto;
   background-color: #005fa3;
 }
 body {
+  max-width: 80;
   height: 100%;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: Arial, sans-serif;
   background: #f2f2f2;
@@ -90,6 +90,7 @@ nav a:hover {
 main {
   flex: 1;
   padding: 20px;
+  background-color: #fff;
 }
 
 /* Controle de Seções */
@@ -259,6 +260,9 @@ footer.rodape strong {
   .form-contato {
     width: 100%;
   }
+  body {
+    width: 100vw;
+  }
 }
 .portfolio-container {
   display: flex;
@@ -299,7 +303,10 @@ footer.rodape strong {
 .portfolio-item-content p {
   color: #666;
 }
-
+#port {
+  display: flex;
+  flex-wrap: wrap;
+}
 .portfolio-item-content a {
   display: inline-block;
   margin-top: 10px;
