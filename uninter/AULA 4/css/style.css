@@ -1,151 +1,311 @@
+/* Estilização global do HTML: Define a aparência de fundo e a fonte para toda a página do site sobre Leonardo da Vinci */
 html {
+  /* Define a imagem de fundo como 'codigo-da-vincib.jpg', usada como pano de fundo para todas as páginas (biografia, obras, curiosidades). A imagem está no mesmo diretório do CSS */
   background-image: url(codigo-da-vincib.jpg);
+  /* Garante que a imagem cubra todo o viewport, escalando proporcionalmente. No site, isso cria um fundo temático que reflete o estilo renascentista */
   background-size: cover;
+  /* Impede a repetição da imagem, mantendo uma aparência limpa e única em todas as seções do site */
   background-repeat: no-repeat;
+  /* Fixa a imagem de fundo, para que ela não role com o conteúdo, proporcionando uma experiência visual estável enquanto o usuário navega pela biografia ou outras páginas */
   background-attachment: fixed;
+  /* Define uma pilha de fontes com 'Trebuchet MS' como principal, garantindo legibilidade e consistência nas seções como header, menu e conteúdo principal */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-}
-body {
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: rgb(255, 255, 255);
-}
-.container {
-  display: grid;
-}
-header {
-  background-color: rgb(18, 33, 83);
-  grid-column-start: 1;
-  grid-column-end: 12;
-  color: white;
-  text-align: center;
-}
-#obras {
-  background-color: rgb(18, 33, 83);
-  text-align: center;
-  color: white;
-  font-size: 2em;
-  font-weight: lighter;
+  /* Garante que o elemento HTML ocupe toda a altura do viewport, essencial para que o fundo cubra toda a tela em todas as páginas */
+  height: 100%;
+  /* Alternativa: Se quiser um fundo sólido em vez de uma imagem, substitua por 'background: #f4f4f4;' para um cinza claro, ou use 'background: linear-gradient(135deg, #f5f7fa, #c3cfe2);' para um gradiente suave */
 }
 
-.menu {
-  background-color: white;
-  grid-column: 1 / -1; /* usa toda a largura */
-  display: flex;
-  justify-content: center; /* centraliza */
-  padding: 10px 0;
+/* Estilização do body: Centraliza o conteúdo e cria uma área branca para o conteúdo principal do site */
+body {
+  /* Limita a largura máxima a 1200px, centralizando o conteúdo (header, menu, biografia, etc.) em telas largas, garantindo legibilidade */
+  max-width: 1200px;
+  /* Garante que o body ocupe toda a altura do viewport, alinhando-se com o fundo fixo do HTML */
+  height: 100%;
+  /* Centraliza o body horizontalmente com margens automáticas, criando um layout centrado para todas as páginas */
+  margin: 0 auto;
+  /* Define um fundo branco sólido que cobre a imagem de fundo do HTML, criando um contêiner claro para o conteúdo (ex.: texto da biografia, imagem de Leonardo) */
+  background-color: rgb(255, 255, 255);
+  /* Alternativa: Para um fundo ligeiramente transparente, use 'background-color: rgba(255, 255, 255, 0.9);' para deixar a imagem de fundo sutilmente visível, ou 'background-color: #fef9e7;' para um tom de pergaminho que remete à era de Da Vinci */
 }
+
+/* Estilização do container: Define o layout de grade para organizar as seções do site */
+.container {
+  /* Estabelece um layout de grade CSS, usado no header, menu e seções de conteúdo, permitindo um alinhamento estruturado (ex.: imagem de Leonardo à esquerda, texto à direita na página de biografia) */
+  display: grid;
+  /* Alternativa: Se preferir um layout mais flexível, substitua por 'display: flex; flex-wrap: wrap;' para organizar os elementos em linhas ou colunas, mas isso exigirá ajustes nas regras de grid-column */
+}
+
+/* Estilização do header: Define o estilo do cabeçalho presente na página inicial (Biografia) */
+header {
+  /* Define um fundo azul escuro, criando um contraste forte para o título 'Biografia Leonardo da Vinci' */
+  background-color: rgb(18, 33, 83);
+  /* Ocupa da primeira à décima segunda coluna da grade, garantindo que o cabeçalho use toda a largura do contêiner */
+  grid-column-start: 1;
+  grid-column-end: 12;
+  /* Define a cor do texto como branca, garantindo legibilidade contra o fundo escuro */
+  color: white;
+  /* Centraliza o texto (ex.: 'Biografia Leonardo da Vinci') horizontalmente */
+  text-align: center;
+  /* Alternativa: Para um visual mais moderno, experimente 'background: linear-gradient(to right, #122153, #2a4066);' para um gradiente, ou adicione 'padding: 20px;' para mais espaço interno */
+}
+
+/* Estilização da seção #obras: Aplica-se à seção de obras (provavelmente na página 'obras.html') */
+#obras {
+  /* Define o mesmo fundo azul escuro do header, mantendo consistência visual entre as páginas */
+  background-color: rgb(18, 33, 83);
+  /* Centraliza o texto, ideal para títulos ou cabeçalhos da seção de obras */
+  text-align: center;
+  /* Define a cor do texto como branca para contraste */
+  color: white;
+  /* Define o tamanho da fonte como 2em, destacando o título da seção */
+  font-size: 2em;
+  /* Usa uma espessura de fonte mais leve, criando um visual elegante */
+  font-weight: lighter;
+  /* Alternativa: Para um estilo mais ousado, use 'font-weight: bold; font-size: 2.5em;' ou adicione 'text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);' para um efeito de sombra */
+}
+
+/* Estilização do menu: Define a barra de navegação presente em todas as páginas (Biografia, Obras, Curiosidades) */
+.menu {
+  /* Define um fundo branco, contrastando com o header e destacando os links de navegação */
+  background-color: white;
+  /* Ocupa toda a largura da grade, garantindo que o menu esteja alinhado com o contêiner */
+  grid-column: 1 / -1;
+  /* Usa Flexbox para organizar os itens do menu (links) em uma linha */
+  display: flex;
+  /* Centraliza os links horizontalmente, criando um layout simétrico */
+  justify-content: center;
+  /* Adiciona 10px de preenchimento superior e inferior para espaçamento */
+  padding: 10px 0;
+  /* Alternativa: Para um menu fixo no topo, adicione 'position: sticky; top: 0; z-index: 1000;' para mantê-lo visível ao rolar a página */
+}
+
+/* Estilização da seção de imagem de Leonardo: Aplica-se ao aside com a imagem e informações na página de biografia */
 .imagem_leo {
+  /* Ocupa da primeira à terceira coluna da grade, posicionando a imagem e as informações à esquerda do texto principal */
   grid-column-start: 1;
   grid-column-end: 3;
+  /* Adiciona 10px de preenchimento ao redor do conteúdo, garantindo espaço entre a imagem e as bordas */
   padding: 10px;
+  /* Alternativa: Para centralizar a imagem verticalmente, adicione 'display: flex; flex-direction: column; align-items: center;' */
 }
+
+/* Estilização da seção principal: Aplica-se ao conteúdo principal (ex.: texto da biografia) */
 .principal {
+  /* Ocupa da quarta à décima segunda coluna, posicionando o texto à direita da imagem de Leonardo */
   grid-column-start: 4;
   grid-column-end: 12;
+  /* Adiciona 15px de preenchimento à esquerda e à direita, melhorando a legibilidade do texto */
   padding-left: 15px;
   padding-right: 15px;
+  /* Justifica o texto, alinhando-o uniformemente para uma aparência profissional */
   text-align: justify;
+  /* Alternativa: Para um texto alinhado à esquerda, use 'text-align: left;' ou adicione 'line-height: 1.8;' para maior espaçamento entre linhas */
 }
+
+/* Estilização do footer: Define o estilo do rodapé presente em todas as páginas */
 footer {
+  /* Ocupa toda a largura da grade, garantindo que o rodapé esteja alinhado com o contêiner */
   grid-column-start: 1;
   grid-column-end: 12;
+  /* Define o mesmo fundo azul escuro do header, mantendo consistência visual */
   background-color: rgb(18, 33, 83);
+  /* Define a cor do texto como branca para contraste */
   color: white;
+  /* Centraliza o texto (ex.: 'Desenvolvido por Jefferson Girardi através da Uninter') */
   text-align: center;
+  /* Adiciona 5px de preenchimento, criando um rodapé compacto */
   padding: 5px;
+  /* Alternativa: Para um rodapé mais destacado, use 'padding: 15px; font-size: 1.1em;' ou adicione 'border-top: 2px solid #fff;' para uma linha superior */
 }
+
+/* Estilização da lista do menu: Define o estilo da lista de links de navegação */
 .menu ul {
+  /* Usa Flexbox para organizar os links em uma linha horizontal */
   display: flex;
+  /* Remove os marcadores padrão da lista, criando um visual limpo */
   list-style-type: none;
+  /* Remove o preenchimento padrão para controle total do layout */
   padding: 0;
+  /* Remove a margem padrão, alinhando os links corretamente */
   margin: 0;
+  /* Adiciona 20px de espaçamento entre os links, garantindo separação visual */
   gap: 20px;
+  /* Alternativa: Para um menu vertical em telas menores, adicione 'flex-direction: column;' dentro de uma media query */
 }
+
+/* Estilização dos links do menu: Define o estilo dos links de navegação */
 .menu a,
 .menu a:link {
+  /* Remove o sublinhado padrão dos links, criando um visual moderno */
   text-decoration: none;
+  /* Adiciona preenchimento interno, tornando os links mais confortáveis para clicar */
   padding: 8px 16px;
+  /* Adiciona uma borda cinza de 1px, destacando cada link */
   border: solid gray 1px;
+  /* Define a cor do texto como branca, contrastando com o fundo azul */
   color: rgb(255, 255, 255);
+  /* Define o mesmo fundo azul escuro do header, mantendo consistência */
   background-color: rgb(18, 33, 83);
+  /* Alternativa: Para links mais arredondados, adicione 'border-radius: 5px;' ou use 'background-color: #3e8e41;' para um tom verde que remete à curiosidade */
 }
+
+/* Estilização dos itens da lista: Define o comportamento dos itens da lista do menu */
 li {
+  /* Faz os itens flutuarem à esquerda, embora o 'display: flex' no .menu ul já controle o layout */
   float: left;
+  /* Alternativa: Como o Flexbox já é usado, você pode remover 'float: left;' sem impacto, ou usar 'display: inline-block;' se preferir um layout sem Flexbox */
 }
+
+/* Estilização do hover nos links do menu: Define o comportamento ao passar o mouse */
 .menu a:hover {
+  /* Muda o fundo para um tom de azul (cadetblue), destacando o link ao passar o mouse */
   background-color: cadetblue;
+  /* Mantém a cor do texto branca para legibilidade */
   color: white;
+  /* Alternativa: Para um efeito mais dinâmico, adicione 'transform: scale(1.05); transition: all 0.2s ease;' para um leve zoom no hover */
 }
+
+/* Estilização das imagens: Aplica-se a elementos com a classe 'img' (provavelmente usados na página de obras) */
 .img {
+  /* Adiciona uma borda preta de 1px, destacando as imagens (ex.: quadros de Da Vinci) */
   border: 1px solid rgb(3, 3, 3);
+  /* Arredonda as bordas com um raio de 1rem, criando um visual suave */
   border-radius: 1rem;
+  /* Adiciona preenchimento interno de 0.8rem, separando a imagem da borda */
   padding: 0.8rem;
+  /* Adiciona margem de 0.4rem, garantindo espaçamento entre imagens */
   margin: 0.4rem;
+  /* Adiciona uma sombra sutil, dando profundidade às imagens */
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  /* Alternativa: Para um estilo sem borda, remova 'border' e use 'box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);' para uma sombra mais pronunciada */
 }
+
+/* Estilização do hover nas imagens: Define o comportamento ao passar o mouse */
 .img:hover {
+  /* Aumenta a imagem em 10%, criando um efeito de zoom interativo */
   transform: scale(1.1);
+  /* Aumenta a sombra, destacando ainda mais a imagem */
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+  /* Define uma transição suave para o zoom e a sombra, com duração de 0.3 segundos */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Alternativa: Para um efeito de fade, adicione 'opacity: 0.9;' ou use 'filter: brightness(110%);' para um leve clareamento */
 }
+
+/* Estilização das informações: Aplica-se à classe 'infos' na seção de imagem de Leonardo */
 .infos {
+  /* Limita a largura máxima a 200px, mantendo as informações (ex.: ocupação, datas) compactas ao lado da imagem */
   max-width: 200px;
+  /* Alternativa: Para um texto mais espaçado, adicione 'padding: 10px; line-height: 1.5;' ou use 'background: #f4f4f4;' para um fundo cinza claro */
 }
+
+/* Estilização das imagens dentro da classe 'img': Define dimensões específicas */
 .img img {
+  /* Define a largura da imagem como 180px, ideal para miniaturas de obras */
   width: 180px;
+  /* Define a altura como 100px, mantendo proporções consistentes */
   height: 100px;
+  /* Alternativa: Para imagens responsivas, use 'width: 100%; height: auto;' e ajuste o contêiner com 'max-width: 180px;' */
 }
 
+/* Estilização do card: Aplica-se a elementos com a classe 'card' (provavelmente para exibir obras ou curiosidades) */
 .card {
+  /* Usa Flexbox para organizar os itens em uma linha que pode quebrar em várias */
   display: flex;
+  /* Permite que os itens se ajustem em várias linhas, ideal para várias imagens ou blocos */
   flex-flow: row wrap;
+  /* Centraliza os itens horizontalmente, criando um layout equilibrado */
   justify-content: center;
+  /* Centraliza o texto dentro dos itens, ideal para legendas ou títulos */
   text-align: center;
+  /* Alternativa: Para espaçamento personalizado, adicione 'gap: 15px;' ou use 'justify-content: space-around;' para distribuir os itens uniformemente */
 }
+
+/* Estilização da curiosidade: Aplica-se a blocos de curiosidades (provavelmente na página 'curiosidades.html') */
 .curiosidade {
+  /* Define um fundo cinza claro, destacando o bloco de texto contra o fundo branco do body */
   background-color: #f4f4f4;
+  /* Adiciona uma borda esquerda verde, criando um destaque visual que remete a informações interessantes */
   border-left: 5px solid #3e8e41;
+  /* Adiciona 15px de preenchimento interno, garantindo conforto visual */
   padding: 15px;
+  /* Adiciona 10px de margem, separando os blocos de curiosidades */
   margin: 10px;
+  /* Arredonda as bordas com um raio de 8px, criando um visual moderno */
   border-radius: 8px;
+  /* Define Arial como fonte, garantindo legibilidade nos textos de curiosidades */
   font-family: Arial, sans-serif;
+  /* Define a posição como relativa, permitindo ajustes futuros (ex.: ícones ou pseudo-elementos) */
   position: relative;
+  /* Alternativa: Para um visual mais destacado, use 'box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);' ou mude a borda para 'border: 2px solid #3e8e41;' */
 }
 
+/* Estilização dos parágrafos dentro de 'curiosidade': Define o estilo do texto */
 .curiosidade p {
+  /* Remove margens padrão, garantindo controle total do espaçamento */
   margin: 0;
+  /* Define o espaçamento entre linhas como 1.6, melhorando a legibilidade */
   line-height: 1.6;
-}
-.principal h1 {
-  font-family: "Georgia", serif;
-  font-size: 20px;
-  margin-bottom: 25px;
-  color: #333;
+  /* Alternativa: Para um texto mais destacado, adicione 'font-size: 1.1em;' ou 'color: #333;' para um cinza escuro */
 }
 
+/* Estilização do h1 dentro de 'principal': Define o estilo dos títulos na seção principal */
+.principal h1 {
+  /* Define Georgia como fonte, criando um visual clássico para o título 'Leonardo da Vinci' */
+  font-family: "Georgia", serif;
+  /* Define o tamanho da fonte como 20px, adequado para títulos secundários */
+  font-size: 20px;
+  /* Adiciona 25px de margem inferior, separando o título do texto */
+  margin-bottom: 25px;
+  /* Define a cor como um cinza escuro, garantindo contraste e legibilidade */
+  color: #333;
+  /* Alternativa: Para um título mais impactante, use 'font-size: 24px; font-weight: bold;' ou adicione 'text-transform: uppercase;' para letras maiúsculas */
+}
+
+/* Media query: Ajustes para telas com largura máxima de 767px (dispositivos móveis) */
 @media only screen and (max-width: 767px) {
+  /* Estilização do wrapper: Ajusta o layout para a seção principal em telas menores */
   .wrapper {
+    /* Ocupa apenas a primeira coluna, empilhando o conteúdo verticalmente na página de biografia */
     grid-column-start: 1;
     grid-column-end: 1;
+    /* Alternativa: Adicione 'padding: 10px;' para mais espaço em telas pequenas */
   }
+
+  /* Estilização da imagem de Leonardo: Ajusta o aside para telas menores */
   .imagem_leo {
+    /* Ocupa apenas a primeira coluna, centralizando a imagem e as informações */
     grid-column-start: 1;
     grid-column-end: 1;
+    /* Centraliza o texto e a imagem horizontalmente */
     text-align: center;
+    /* Adiciona 10px de preenchimento, garantindo espaço ao redor */
     padding: 10px;
+    /* Alternativa: Para uma imagem maior, adicione 'max-width: 100%;' ao img dentro de .imagem_leo */
   }
+
+  /* Estilização das informações: Ajusta o layout das informações (ex.: ocupação, datas) */
   .infos {
+    /* Usa Flexbox para organizar o conteúdo em uma coluna */
     display: flex;
+    /* Define a largura máxima como 800px, permitindo que as informações se ajustem à tela */
     max-width: 800px;
+    /* Organiza os itens verticalmente, ideal para telas pequenas */
     flex-direction: column;
+    /* Centraliza os itens horizontalmente */
     align-items: center;
+    /* Centraliza o texto, garantindo um visual simétrico */
     text-align: center;
+    /* Alternativa: Para um fundo destacado, adicione 'background: #f9f9f9; padding: 10px;' */
   }
+
+  /* Estilização da seção principal: Ajusta o texto principal para telas menores */
   .principal {
+    /* Ocupa apenas a primeira coluna, empilhando o texto abaixo da imagem */
     grid-column-start: 1;
     grid-column-end: 1;
+    /* Centraliza os itens horizontalmente, mantendo o texto alinhado */
     align-items: center;
+    /* Alternativa: Para mais espaço, adicione 'padding: 20px;' ou 'font-size: 1.1em;' para melhor legibilidade */
   }
 }
