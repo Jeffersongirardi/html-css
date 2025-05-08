@@ -1,9 +1,11 @@
+/* Define altura total da página e centraliza margens com fundo azul escuro */
 html {
   height: 100%;
   margin: 0 auto;
   background-color: #005fa3;
 }
 
+/* Configura o corpo da página com altura total, sem margens, fundo cinza claro e layout em coluna */
 body {
   height: 100%;
   margin: 0;
@@ -14,6 +16,7 @@ body {
   flex-direction: column;
 }
 
+/* Estiliza o cabeçalho com fundo escuro, texto branco e centralizado */
 header {
   background-color: #222;
   color: white;
@@ -21,11 +24,13 @@ header {
   text-align: center;
 }
 
+/* Centraliza o menu com margem inferior */
 .menu {
   text-align: center;
   margin-bottom: 10px;
 }
 
+/* Remove marcadores da lista do menu e organiza itens em linha com espaçamento */
 .menu ul {
   list-style: none;
   padding: 0;
@@ -36,10 +41,12 @@ header {
   gap: 20px;
 }
 
+/* Define os itens do menu como inline */
 .menu li {
   display: inline;
 }
 
+/* Estiliza os links do menu com fundo azul, texto branco, bordas arredondadas e transição suave */
 .menu a {
   color: white;
   text-decoration: none;
@@ -52,16 +59,19 @@ header {
   transition: background-color 0.3s;
 }
 
+/* Altera a cor de fundo dos links do menu ao passar o mouse */
 .menu a:hover {
   background-color: #0077cc;
 }
 
+/* Organiza a navegação com itens centralizados e quebras de linha em telas menores */
 nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
+/* Estiliza os links de navegação com fundo escuro, bordas e transição suave */
 nav a {
   text-decoration: none;
   color: #ffffff;
@@ -75,25 +85,30 @@ nav a {
   text-align: center;
 }
 
+/* Altera a cor de fundo e texto dos links de navegação ao passar o mouse */
 nav a:hover {
   background-color: #005fa3;
   color: #fff;
 }
 
+/* Define a seção principal como flexível, ocupando o espaço restante com fundo branco */
 main {
   flex: 1;
   background-color: #fff;
 }
 
+/* Oculta seções por padrão */
 .secao {
   display: none;
   text-align: center;
 }
 
+/* Exibe a seção ativa */
 .secao.ativa {
   display: block;
 }
 
+/* Centraliza e organiza o conteúdo da seção "Sobre" em coluna */
 .sobre-container {
   display: flex;
   flex-direction: column;
@@ -103,16 +118,19 @@ main {
   padding: 10px 20px;
 }
 
+/* Ajusta o texto da seção "Sobre" para justificado */
 .sobre-texto {
   flex: 1 1 60%;
   text-align: justify;
 }
 
+/* Centraliza a imagem da seção "Sobre" */
 .sobre-imagem {
   flex: 1 1 30%;
   text-align: center;
 }
 
+/* Limita a largura da imagem, adiciona bordas arredondadas e sombra */
 .sobre-imagem img {
   max-width: 60%;
   height: auto;
@@ -120,6 +138,7 @@ main {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Centraliza e organiza a seção "Formação" com espaçamento entre itens */
 .formacao-container {
   max-width: 900px;
   margin: 0 auto;
@@ -129,6 +148,7 @@ main {
   gap: 20px;
 }
 
+/* Estiliza cada item de formação com borda lateral azul e sombra */
 .formacao-item {
   background-color: #ffffff;
   padding: 15px;
@@ -136,11 +156,13 @@ main {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Define a cor do título dos itens de formação */
 .formacao-item h3 {
   margin-top: 0;
   color: #0077cc;
 }
 
+/* Centraliza e estiliza a seção "Contato" com fundo branco, bordas arredondadas e sombra */
 .contato-container {
   max-width: 600px;
   margin: 0 auto;
@@ -151,22 +173,26 @@ main {
   text-align: center;
 }
 
+/* Define a cor do título da seção "Contato" */
 .contato-container h2 {
   color: #0077cc;
   margin-bottom: 10px;
 }
 
+/* Ajusta a cor do texto da seção "Contato" */
 .contato-container p {
   color: #555;
   margin-bottom: 30px;
 }
 
+/* Organiza o formulário de contato em coluna com espaçamento */
 .form-contato {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
+/* Estiliza os campos de entrada e textarea com bordas e transição suave */
 .form-contato input,
 .form-contato textarea {
   padding: 12px 15px;
@@ -176,12 +202,14 @@ main {
   transition: border-color 0.3s ease;
 }
 
+/* Altera a cor da borda dos campos ao receber foco */
 .form-contato input:focus,
 .form-contato textarea:focus {
   border-color: #0077cc;
   outline: none;
 }
 
+/* Estiliza o botão do formulário com fundo azul e transição suave */
 .form-contato button {
   background-color: #0077cc;
   color: white;
@@ -193,14 +221,17 @@ main {
   transition: background-color 0.3s ease;
 }
 
+/* Altera a cor de fundo do botão ao passar o mouse */
 .form-contato button:hover {
   background-color: #005fa3;
 }
 
+/* Centraliza o conteúdo da seção "Portfólio" */
 #portfolio {
   text-align: center;
 }
 
+/* Estiliza o rodapé com fundo escuro, texto branco e centralizado */
 footer.rodape {
   background-color: #222;
   color: #fff;
@@ -209,10 +240,12 @@ footer.rodape {
   font-size: 14px;
 }
 
+/* Define a cor de destaque para texto em negrito no rodapé */
 footer.rodape strong {
   color: #00d0ff;
 }
 
+/* Organiza os itens do portfólio em um layout flexível com espaçamento */
 .portfolio-container {
   display: flex;
   flex-wrap: wrap;
@@ -221,6 +254,7 @@ footer.rodape strong {
   padding: 20px;
 }
 
+/* Ajustes para telas menores (até 768px) */
 @media (max-width: 768px) {
   .sobre-container,
   .formacao-container {
@@ -240,6 +274,7 @@ footer.rodape strong {
   }
 }
 
+/* Ajustes para telas muito pequenas (até 480px) */
 @media (max-width: 480px) {
   html {
     max-width: 100vw;

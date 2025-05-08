@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pares e Ímpares</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(45deg, #ff00cc, #3333ff, #00ffcc);
+      background-size: 400% 400%;
+      animation: coresMutantes 10s infinite alternate;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      color: #fff;
+      text-align: center;
+      padding: 40px;
+    }
+
+    @keyframes coresMutantes {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    h2 {
+      font-size: 2.5em;
+      color: #ffeb3b;
+      text-shadow: 2px 2px #000;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1) rotate(3deg);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    input[type="number"] {
+      padding: 12px;
+      font-size: 1.2em;
+      border: 3px dashed #00ffcc;
+      border-radius: 10px;
+      background-color: #fff0f5;
+      color: #000;
+      outline: none;
+      transition: all 0.3s;
+    }
+
+    input[type="number"]:focus {
+      background-color: #ffeaa7;
+      border-color: #ff00cc;
+      transform: rotate(1deg) scale(1.05);
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 30px;
+      font-size: 1.1em;
+      font-weight: bold;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      color: white;
+      background: linear-gradient(to right, #ff00cc, #3333ff);
+      box-shadow: 0 0 10px yellow, 0 0 20px magenta;
+      transition: all 0.3s;
+    }
+
+    button:hover {
+      background: linear-gradient(to right, #00ffcc, #ffeb3b);
+      color: black;
+      transform: scale(1.1) rotate(-2deg);
+      box-shadow: 0 0 10px cyan, 0 0 30px lime;
+    }
+
+    #contador,
+    #resultado {
+      margin-top: 30px;
+      font-size: 1.5em;
+      color: #00ffcc;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 15px;
+      border: 2px dotted #fff;
+      border-radius: 15px;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+    }
+  </style>
+  <body>
+    <h2>Digite números um por um</h2>
+    <input type="number" id="numero" placeholder="Digite um número" />
+    <div>
+      <button onclick="verResultado()">Ver Resultado</button>
+      <button onclick="limpar()">Limpar</button>
+    </div>
+    <div id="contador"></div>
+    <div id="resultado"></div>
+
+    <script>
+      let numeros = [];
+
+      document
+        .getElementById("numero")
+        .addEventListener("keydown", function (e) {
+          if (e.key === "Enter") {
+            const valor = parseInt(e.target.value);
+            if (!isNaN(valor)) {
+              numeros.push(valor);
+              document.getElementById("contador").innerText =
+                "Números digitados: " + numeros.join(", ");
+              e.target.value = "";
+            }
+          }
+        });
+
+      function verResultado() {
+        const pares = numeros.filter((n) => n % 2 === 0);
+        const impares = numeros.filter((n) => n % 2 !== 0);
+        document.getElementById("resultado").innerHTML = `
+          <p><strong>Pares:</strong> ${pares.join(", ") || "Nenhum"}</p>
+          <p><strong>Ímpares:</strong> ${impares.join(", ") || "Nenhum"}</p>
+        `;
+      }
+
+      function limpar() {
+        numeros = [];
+        document.getElementById("numero").value = "";
+        document.getElementById("contador").innerText = "";
+        document.getElementById("resultado").innerText = "";
+      }
+    </script>
+  </body>
+</html>

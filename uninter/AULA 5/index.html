@@ -3,9 +3,250 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>java Script</title>
+    <title>Area do Circulo</title>
   </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    div {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    p {
+      text-align: center;
+      color: #666;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    input[type="number"],
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #5cb85c;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }
+    button:hover {
+      background-color: #4cae4c;
+    }
+    #resultado,
+    #resultadoSexo,
+    #quantidade {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+      text-align: center;
+    }
+    #quantidade {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      align-items: center;
+      font-size: 15px;
+    }
+    .tabela-par-impar {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 300px;
+      margin: 20px auto; /* <-- CENTRALIZA a tabela horizontalmente */
+    }
+
+    .tabela-par-impar th,
+    .tabela-par-impar td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    .tabela-par-impar th {
+      background-color: #f2f2f2;
+    }
+  </style>
   <body>
-    <h1>Java Script</h1>
+    <div>
+      <h1>Area do Circulo</h1>
+      <p>Este script calcula a area de um circulo.</p>
+      <label for="raio">Digite o raio:</label>
+      <input type="number" id="raio" step="any" />
+      <button onclick="calcularArea()">Calcular Area</button>
+      <div id="resultado"></div>
+    </div>
+    <div>
+      <h1>Determine o sexo</h1>
+      <p>Sexo Femenino ou Masculino?</p>
+      <label for="sexo">Digite o sexo (F / M):</label>
+      <input type="text" id="sexo" step="any" />
+      <button onclick="calcularSexo()">Verificar</button>
+      <div id="resultadoSexo"></div>
+    </div>
+    <div>
+      <h1>Turma de Alunos</h1>
+      <p>Determine o % de homens e mulheres fazem parte desta turma.</p>
+      <label for="qntHomens">Quantos homens há na turma?</label>
+      <input type="number" id="qntHomens" step="any" />
+      <label for="qntMulheres">Quantos homens há na turma?</label>
+      <input type="number" id="qntMulheres" step="any" />
+
+      <button onclick="calcularPorcentual()">Calcular</button>
+      <div id="quantidade">
+        <div id="resultadoQnt"></div>
+      </div>
+    </div>
+    <div>
+      <h1>Numeros Pares e Impares</h1>
+      <p>Verifique quantos números pares e impares há em uma lista</p>
+      <label for="qntNumeros">Digite um número:</label>
+      <input type="number" id="qntNumeros" step="any" />
+
+      <button onclick="parImpar()">Verificar</button>
+      <div id="resultadoParImpar"></div>
+    </div>
+    <script>
+      function calcularArea() {
+        let raio = document.getElementById("raio").value;
+        if (raio === "" || isNaN(raio)) {
+          document.getElementById("resultado").innerText =
+            "Por favor, insira um valor válido.";
+          return;
+        }
+
+        let area = Math.PI * raio * raio;
+        document.getElementById("resultado").innerText =
+          "A área do círculo é: " + area.toFixed(2);
+      }
+      function calcularSexo() {
+        let sexo = document.getElementById("sexo").value.toLowerCase();
+
+        if (sexo === "f") {
+          document.getElementById("resultadoSexo").innerText = "Sexo Feminino";
+        } else if (sexo === "m") {
+          document.getElementById("resultadoSexo").innerText = "Sexo Masculino";
+        } else {
+          document.getElementById("resultadoSexo").innerText =
+            "Por favor, insira um sexo válido.";
+          return;
+        }
+      }
+      function calcularPorcentual() {
+        let homens = document.getElementById("qntHomens").value;
+        let mulheres = document.getElementById("qntMulheres").value;
+
+        let totalAlunos = parseInt(homens) + parseInt(mulheres);
+        let porcentagemHomens = (parseInt(homens) / totalAlunos) * 100;
+        let porcentagemMulheres = (parseInt(mulheres) / totalAlunos) * 100;
+
+        var tabela = "<table>";
+        tabela +=
+          "<tr><th>Sexo</th><th>Quantidade</th><th>Porcentagem</th></tr>";
+        tabela +=
+          "<tr><td>Homens</td><td>" +
+          homens +
+          "</td><td>" +
+          porcentagemHomens.toFixed(2) +
+          "%</td></tr>";
+        tabela +=
+          "<tr><td>Mulheres</td><td>" +
+          mulheres +
+          "</td><td>" +
+          porcentagemMulheres.toFixed(2) +
+          "%</td></tr>";
+        tabela += "</table>";
+
+        document.getElementById("resultadoQnt").innerHTML = tabela;
+
+        document.getElementById("quantidade").style.flexDirection = "column";
+        document.getElementById("quantidade").style.alignItems = "center";
+        document.getElementById("quantidade").style.fontSize = "16px";
+        document.getElementById("resultadoQnt").style.marginTop = "20px";
+        document.getElementById("resultadoQnt").style.textAlign = "center";
+        document
+          .getElementById("resultadoQnt")
+          .querySelector("table").style.borderCollapse = "collapse";
+        document
+          .getElementById("resultadoQnt")
+          .querySelector("table").style.width = "100%";
+        document
+          .getElementById("resultadoQnt")
+          .querySelector("table").style.maxWidth = "400px";
+        document
+          .getElementById("resultadoQnt")
+          .querySelectorAll("th, td")
+          .forEach(function (cell) {
+            cell.style.border = "1px solid #ddd";
+            cell.style.padding = "8px";
+            cell.style.textAlign = "left";
+          });
+        document
+          .getElementById("resultadoQnt")
+          .querySelector("th").style.backgroundColor = "#f2f2f2";
+      }
+      function parImpar() {
+        let numero = document.getElementById("qntNumeros").value;
+        let numeros = [];
+        for (let i = 1; i <= numero; i++) {
+          numeros.push(i);
+        }
+        let pares = numeros.filter((num) => num % 2 === 0);
+        let impares = numeros.filter((num) => num % 2 !== 0);
+
+        let tabela = "<table class='tabela-par-impar'>";
+        tabela += "<tr><th>Tipo</th><th>Quantidade</th></tr>";
+        tabela += "<tr><td>Pares</td><td>" + pares.length + "</td></tr>";
+        tabela += "<tr><td>Ímpares</td><td>" + impares.length + "</td></tr>";
+        tabela += "</table>";
+
+        document.getElementById("resultadoParImpar").innerHTML = tabela;
+
+        document
+          .getElementById("resultadoParImpar")
+          .querySelector("table").style.borderCollapse = "collapse";
+        document
+          .getElementById("resultadoParImpar")
+          .querySelector("table").style.width = "100%";
+        document
+          .getElementById("resultadoParImpar")
+          .querySelector("table").style.maxWidth = "300px";
+        document
+          .getElementById("resultadoParImpar")
+          .querySelector("table").style.alignContent = "center";
+        document
+          .getElementById("resultadoParImpar")
+          .querySelectorAll("th, td")
+          .forEach(function (cell) {
+            cell.style.border = "1px solid #ddd";
+            cell.style.padding = "8px";
+            cell.style.textAlign = "left";
+          });
+        document
+          .getElementById("resultadoParImpar")
+          .querySelector("th").style.backgroundColor = "#f2f2f2";
+      }
+    </script>
   </body>
 </html>
