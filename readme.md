@@ -11,7 +11,6 @@ Meu portfólio pessoal e repositório de estudos em desenvolvimento web.
 │
 ├── projects/               ← Projetos em destaque
 │   ├── redes-sociais/      ← Simulador de iPhone com redes sociais
-│   ├── fourpay-website/    ← Site institucional FourPay Solutions
 │   ├── site-android/       ← História do mascote do Android
 │   └── cordel/             ← Cordel Moderno (parallax)
 │
