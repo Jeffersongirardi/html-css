@@ -1,0 +1,35 @@
+# OS
+.DS_Store
+Thumbs.db
+__MACOSX/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv/
+
+# Node
+node_modules/
+npm-debug.log
+
+# Java / DynamoDB
+*.jar
+*.tar.gz
+*.db
+
+# Temp / Logs
+*.log
+tmp/
+
+# DynamoDB Local (heavy binaries)
+misc/db-dynamo/DynamoDBLocal_lib/
+misc/db-dynamo/*.jar
+misc/db-dynamo/*.tar.gz
+misc/db-dynamo/*.db
