@@ -297,10 +297,93 @@ ul {
   color: var(--color-text-light);
 }
 
+/* ===== BADGE REGION ===== */
+.badge-region {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 4px 14px 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-primary-light);
+  letter-spacing: 0.5px;
+  margin-top: 12px;
+}
+
+.badge-region i {
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+
+/* ===== DEPOIMENTOS ===== */
+.depoimentos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.depoimento-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  text-align: center;
+  transition: all var(--transition);
+}
+
+.depoimento-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.depoimento-card .stars {
+  color: #f59e0b;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+}
+
+.depoimento-card blockquote {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+.depoimento-card .author-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.depoimento-card .author-name {
+  font-weight: 700;
+  color: var(--color-dark);
+  font-size: 0.9rem;
+}
+
+.depoimento-card .author-location {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+}
+
 /* ===== SERVICES GRID ===== */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 24px;
 }
 
@@ -970,7 +1053,7 @@ ul {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .services-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .blog-grid {
@@ -1049,7 +1132,7 @@ ul {
   }
 
   .services-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .blog-grid {
@@ -1057,6 +1140,10 @@ ul {
   }
 
   .franchise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .depoimentos-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1112,6 +1199,10 @@ ul {
 }
 
 @media (max-width: 480px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
   .hero-content h1 {
     font-size: 1.8rem;
   }
