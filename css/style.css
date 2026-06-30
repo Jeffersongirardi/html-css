@@ -176,20 +176,6 @@ section {
   align-items: center;
 }
 
-.sobre-texto {
-  flex: 1;
-}
-
-.sobre-texto p {
-  margin-bottom: 16px;
-  color: #a0a0a0;
-  font-size: 1.05rem;
-}
-
-.sobre-texto strong {
-  color: #e0e0e0;
-}
-
 .sobre-imagem {
   flex-shrink: 0;
   text-align: center;
@@ -208,6 +194,66 @@ section {
   margin-top: 12px;
   font-size: 0.85rem;
   color: #666;
+}
+
+.sobre-texto {
+  flex: 1;
+}
+
+.sobre-texto h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #e0e0e0;
+  margin-bottom: 4px;
+}
+
+.sobre-texto .handle {
+  font-size: 0.9rem;
+  color: #3b82f6;
+  margin-bottom: 24px;
+}
+
+.sobre-texto .bio-lines p {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #a0a0a0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1.5;
+}
+
+.sobre-texto .bio-lines strong {
+  color: #e0e0e0;
+}
+
+.bio-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  width: 24px;
+  text-align: center;
+}
+
+.sobre-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.sobre-tags .tag {
+  background: #1a1a2e;
+  color: #a0a0a0;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  border: 1px solid #2a2a3e;
+  transition: all 0.2s ease;
+}
+
+.sobre-tags .tag:hover {
+  border-color: #3b82f6;
+  color: #e0e0e0;
 }
 
 /* Skills */
@@ -394,6 +440,14 @@ footer {
   .sobre-imagem img {
     width: 160px;
     height: 160px;
+  }
+
+  .sobre-texto .bio-lines p {
+    justify-content: center;
+  }
+
+  .sobre-tags {
+    justify-content: center;
   }
 
   .nav-links {
