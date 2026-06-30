@@ -1,147 +1,266 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Fourpay Solutions</title>
-    <link rel="stylesheet" href="css/stylus.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  </head>
-  <body>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Sobre</a>
-      <a href="#">Serviços</a>
-      <a href="#">Blog</a>
-      <a href="#">Contato</a>
-      <a href="#">Máquina Bin</a>
-      <a href="#">Seja um franqueado</a>
-    </nav>
-    <header>
-      <div>
-        <img src="imagens/4Pay.webp" alt="" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FourPay Solutions — Soluções para Meios de Pagamento</title>
+  <meta name="description" content="Master Franqueado Fiserv. Soluções em meios de pagamento: Clover, TEF, Máquina BIN, BIN Tap. Seja um franqueado." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="favicon.png" type="image/png" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="imagens/4Pay.webp" alt="FourPay Solutions" />
+        <span>FourPay</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="maquina-bin.html">Máquina Bin</a>
+        <a href="franqueado.html">Seja um Franqueado</a>
+        <a href="blog.html">Blog</a>
+        <a href="contato.html" class="btn-nav">Contato</a>
       </div>
-      <h1>FOURPAY SOLUTIONS</h1>
-      <h2>Soluções para meios de pagamento</h2>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-      <a href="#">Nossos serviços</a>
-    </header>
-    <main>
-      <article>
-        <div class="container">
-          <div class="maquina">
-            <img src="imagens/maquina_C680-350x370.png" alt="" />
-          </div>
-          <div class="text">
-            <h2>SOLUÇÕES DE TODOS OS TAMANHOS</h2>
-            <p>
-              A FOURPAY tem como objetivo criar parcerias gerando eficiência e
-              economia para a sua empresa com as melhores soluções para a
-              administração de suas vendas e aceitação de cartões de crédito e
-              débito.
-            </p>
-            <br />
-            <a href="#">Saiba mais</a>
-          </div>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>FOURPAY <br />SOLUTIONS</h1>
+        <p class="hero-tagline">Soluções para meios de pagamento</p>
+        <p>Master Franqueado Fiserv, trabalhamos com as melhores soluções do mercado para administração de vendas e aceitação de cartões de crédito, débito e pix. Clover, Máquina Bin, TEF e Bin Tap.</p>
+        <div class="hero-buttons">
+          <a href="servicos.html" class="btn btn-primary">Nossos serviços <i class="fas fa-arrow-right"></i></a>
+          <a href="franqueado.html" class="btn btn-outline">Seja um franqueado</a>
         </div>
-        <br />
-        <div class="troca1">
-          <h2>NOSSA EQUIPE</h2>
-          <p>
-            Nossa estrutura é enxuta, composta por um time de profissionais
-            jovens, qualificados e dinâmicos da área comercial. Os sócios
-            possuem grande experiência no mercado e propõem um atendimento
-            diferenciado, rápido e eficaz, apresentando soluções e criando
-            parcerias verdadeiras que transcendem o aspecto profissional.
-          </p>
+      </div>
+      <div class="hero-image">
+        <img src="imagens/maquina_C680-350x370.png" alt="Máquina de cartão FourPay" />
+      </div>
+    </div>
+  </section>
 
-          <div class="video">
-            <iframe
-              width="580"
-              height="335"
-              src="https://www.youtube.com/embed/NVh6wicqklg?si=qDzQQULzrwHdwnY-"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <br />
-          <br />
-          <a href="#">Saiba mais</a>
-          <br />
+  <section class="section section-alt" id="servicos">
+    <div class="container">
+      <div class="section-header animate">
+        <h2>Nossos Serviços</h2>
+        <p>Soluções completas para o seu negócio, com tecnologia e segurança</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card animate">
+          <div class="icon"><i class="fas fa-display"></i></div>
+          <h3>Clover</h3>
+          <p>Smart POS com tela touchscreen, gestão de vendas e relatórios em tempo real.</p>
+          <a href="servicos.html#clover" class="btn-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
         </div>
-        <br />
-        <div class="troca2">
-          <h2>SEJA UM REPRESENTANTE</h2>
-          <p>faça parte da nossa equipe</p>
+        <div class="service-card animate">
+          <div class="icon"><i class="fas fa-network-wired"></i></div>
+          <h3>TEF</h3>
+          <p>Pagamentos integrados ao seu sistema de automação comercial com agilidade.</p>
+          <a href="servicos.html#tef" class="btn-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card animate">
+          <div class="icon"><i class="fas fa-credit-card"></i></div>
+          <h3>Máquina BIN</h3>
+          <p>Solução simples e segura com NFC, Wi-Fi, 4G e Bluetooth.</p>
+          <a href="maquina-bin.html" class="btn-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card animate">
+          <div class="icon"><i class="fas fa-mobile-screen-button"></i></div>
+          <h3>BIN Tap</h3>
+          <p>Pagamento por aproximação sem fricções, rápido e seguro.</p>
+          <a href="servicos.html#bin-tap" class="btn-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="card">
-            <img
-              src="imagens/maquina_C680-350x370.png"
-              alt="Cartão sendo usado"
-            />
-            <div class="card-content">
-              <h3>79% DOS CONSUMIDORES PREFEREM CARTÃO</h3>
-              <p>
-                Uma pesquisa realizada em 2016 pela consultoria
-                PricewaterhouseCoopers (PwC) identificou que 79% dos brasileiros
-                preferem concluir as compras pagando no cartão de crédito.
-              </p>
+  <section class="section" id="sobre">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text animate">
+          <h2>Nossa Equipe</h2>
+          <p>Contamos com uma equipe ágil, formada por profissionais altamente capacitados e comprometidos com resultados. Nossos sócios possuem ampla experiência no mercado de pagamentos e se destacam por oferecer um atendimento consultivo e eficiente.</p>
+          <p>Buscamos não apenas entregar soluções, mas construir parcerias sólidas que impulsionam o crescimento dos nossos clientes.</p>
+          <a href="sobre.html" class="btn btn-primary">Conheça nossa história <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="about-image animate">
+          <img src="imagens/maquina_C680-350x370.png" alt="Equipe FourPay" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="franqueado">
+    <div class="container">
+      <div class="section-header animate">
+        <h2>Seja um Franqueado Fiserv</h2>
+        <p>Faça parte do nosso time e empreenda no mercado de meios de pagamento</p>
+      </div>
+      <div class="franchise-grid">
+        <div class="franchise-card animate">
+          <div class="icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Modelo de Negócios Consolidado</h3>
+          <p>Atue com uma estrutura já validada e reconhecida no mercado, com soluções inovadoras da Fiserv que atendem a todas as demandas do setor comercial.</p>
+        </div>
+        <div class="franchise-card animate">
+          <div class="icon"><i class="fas fa-rocket"></i></div>
+          <h3>Expansão Acelerada</h3>
+          <p>O mercado brasileiro registra crescimento constante no uso de cartões e pagamentos digitais. O volume de transações eletrônicas cresceu mais de 20% nos últimos anos.</p>
+        </div>
+        <div class="franchise-card animate">
+          <div class="icon"><i class="fas fa-headset"></i></div>
+          <h3>Suporte e Treinamento</h3>
+          <p>Receba capacitação contínua, materiais de apoio e acompanhamento estratégico para operar de forma eficiente e alcançar resultados expressivos.</p>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top: 40px;">
+        <a href="franqueado.html" class="btn btn-primary">Quero ser um franqueado <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog-grid-wrap" style="display:none;"></section>
+
+  <section class="section section-alt" id="blog">
+    <div class="container">
+      <div class="section-header animate">
+        <h2>Últimos Artigos</h2>
+        <p>Fique por dentro do mercado de pagamentos</p>
+      </div>
+      <div class="blog-grid">
+        <a href="posts/antecipacao.html" class="blog-card animate">
+          <div class="blog-image" style="background: linear-gradient(135deg, #1d4ed8, #3b82f6);">
+            <i class="fas fa-coins"></i>
+          </div>
+          <div class="blog-body">
+            <span class="blog-tag">Novidade!</span>
+            <h3>Antecipação de recebíveis</h3>
+            <p>Entenda como funciona a antecipação de recebíveis e como ela pode beneficiar seu negócio.</p>
+            <div class="blog-meta">
+              <span><i class="far fa-calendar"></i> 14 jul 2022</span>
+              <span><i class="far fa-clock"></i> 5 min</span>
             </div>
           </div>
-
-          <div class="card">
-            <img
-              src="imagens/maquina_C680-350x370.png"
-              alt="Gráfico de faturamento"
-            />
-            <div class="card-content">
-              <h3>55% EM AUMENTO DE FATURAMENTO NAS EMPRESAS COM CARTÕES</h3>
-              <p>
-                O Sebrae levantou dados de micro e pequenas empresas que aceitam
-                o “dinheiro plástico”. Para 55% destas empresas, o aceite de
-                cartões aumentou seus faturamentos.
-              </p>
+        </a>
+        <a href="posts/chargeback.html" class="blog-card animate">
+          <div class="blog-image" style="background: linear-gradient(135deg, #059669, #10b981);">
+            <i class="fas fa-shield-halved"></i>
+          </div>
+          <div class="blog-body">
+            <span class="blog-tag">Novidade!</span>
+            <h3>Como funciona o chargeback?</h3>
+            <p>Saiba o que é chargeback, como ele afeta seu negócio e como se prevenir contra fraudes.</p>
+            <div class="blog-meta">
+              <span><i class="far fa-calendar"></i> 14 jul 2022</span>
+              <span><i class="far fa-clock"></i> 3 min</span>
             </div>
           </div>
-
-          <div class="card">
-            <img
-              src="imagens/maquina_C680-350x370.png"
-              alt="Empresas pequenas"
-            />
-            <div class="card-content">
-              <h3>61% DAS PEQUENAS EMPRESAS AINDA NÃO ACEITAM CARTÃO</h3>
-              <p>
-                Segundo pesquisa realizada pelo Sebrae, 39% dos pequenos
-                negócios recebem pagamento por débito e crédito.
-              </p>
+        </a>
+        <a href="posts/mercado-pagamentos.html" class="blog-card animate">
+          <div class="blog-image" style="background: linear-gradient(135deg, #7c3aed, #a855f7);">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <div class="blog-body">
+            <span class="blog-tag">Novidade!</span>
+            <h3>O mercado de pagamentos</h3>
+            <p>Descubra as tendências e inovações que estão transformando o mercado de pagamentos no Brasil.</p>
+            <div class="blog-meta">
+              <span><i class="far fa-calendar"></i> 14 jul 2022</span>
+              <span><i class="far fa-clock"></i> 4 min</span>
             </div>
           </div>
+        </a>
+      </div>
+      <div style="text-align:center; margin-top: 40px;">
+        <a href="blog.html" class="btn btn-primary">Ver todos os artigos <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
 
-          <a class="botao" href="#">Saiba mais</a>
+  <section class="section" id="contato-home">
+    <div class="container">
+      <div class="section-header animate">
+        <h2>Precisa de mais informações?</h2>
+        <p>Estamos aqui para ajudá-lo. Entre em contato por telefone, email ou redes sociais.</p>
+      </div>
+      <div style="text-align:center;">
+        <a href="contato.html" class="btn btn-primary">Fale conosco <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <h2>Receba novidades</h2>
+      <p>Inscreva-se para receber conteúdos exclusivos sobre o mercado de pagamentos</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Seu melhor email" required />
+        <button type="submit" class="btn btn-primary">Inscrever</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <img src="imagens/4Pay.webp" alt="FourPay Solutions" />
+            <span>FourPay</span>
+          </div>
+          <p>Soluções para meios de pagamento. Master Franqueado Fiserv.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
         </div>
-        <div class="troca1">
-          <h2>ÚLTIMOS ARTIGOS</h2>
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
         </div>
-      </article>
-      <aside class="troca2">
-        <h3>Precisa de mais informações?</h3>
-        <p>
-          Estamos aqui para ajudá-lo. Entre em contato por telefone, email ou
-          redes sociais.
-        </p>
-        <a href="#">Contato</a>
-      </aside>
-    </main>
-    <br />
-    <footer>
-      <p>
-        Site desenvolvido por Jefferson Girardi - Todos os direitos reservados
-        para FOURPAY SOLUTIONS LTDA.
-      </p>
-    </footer>
-  </body>
+        <div>
+          <h4>Produtos</h4>
+          <ul>
+            <li><a href="servicos.html#clover">Clover</a></li>
+            <li><a href="servicos.html#tef">TEF</a></li>
+            <li><a href="maquina-bin.html">Máquina BIN</a></li>
+            <li><a href="servicos.html#bin-tap">BIN Tap</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="contato.html">Fale conosco</a></li>
+            <li><a href="franqueado.html">Seja um franqueado</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 FOURPAY Solutions. Todos os direitos reservados. Site desenvolvido por Jefferson Girardi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
