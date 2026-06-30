@@ -25,15 +25,19 @@ Meu portfólio pessoal e repositório de estudos em desenvolvimento web.
 │   ├── db-dynamo/          ← Estudos DynamoDB Local
 │   └── galeria-videos/     ← Galeria de vídeos
 │
-└── university/             ← Trabalhos acadêmicos Uninter
-    ├── portfolio/          ← Portfólio pessoal (versão Uninter)
-    ├── projeto-tecnologia/ ← Blog de tecnologia
-    └── projetoex/          ← Projeto Extensionista (Flask)
+├── university/             ← Trabalhos acadêmicos Uninter
+│   ├── portfolio/          ← Portfólio pessoal (versão Uninter)
+│   ├── projeto-tecnologia/ ← Blog de tecnologia
+│   └── projetoex/          ← Projeto Extensionista (Flask)
+│
+└── external/               ← Projetos em repositórios próprios
+    ├── fourpay-solutions   ← Site institucional FOURPAY SOLUTIONS (Netlify)
+    └── warriorfree         ← Jogo de luta 2D em Python/Pygame
 ```
 
 ## Tecnologias
 
-HTML, CSS, JavaScript, Python, Flask, Git
+HTML, CSS, JavaScript, Python, Flask, Pygame, Git, Docker, Spring Boot, Node.js, Flutter, SQL
 
 ## GitHub Pages
 
