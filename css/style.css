@@ -325,42 +325,6 @@ section {
   text-decoration: underline;
 }
 
-/* Outros Projetos */
-#outros {
-  background: #0a0a0f;
-}
-
-.outros-lista {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 12px;
-}
-
-.outros-item {
-  background: #16161f;
-  border: 1px solid #1f1f2a;
-  border-radius: 8px;
-  padding: 16px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: all 0.2s;
-}
-
-.outros-item:hover {
-  border-color: #3b82f6;
-}
-
-.outros-item .nome {
-  font-size: 0.9rem;
-  color: #a0a0a0;
-}
-
-.outros-item .link-outro {
-  font-size: 0.8rem;
-  color: #3b82f6;
-}
-
 /* Contato */
 #contato {
   background: #0f0f16;
