@@ -264,6 +264,8 @@ section {
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
 }
 
 .projeto-card:hover {
@@ -283,6 +285,9 @@ section {
 
 .projeto-card .info {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .projeto-card .info h3 {
@@ -314,15 +319,22 @@ section {
 
 .projeto-card .info .link-projeto {
   font-size: 0.85rem;
-  color: #3b82f6;
+  color: #fff;
   font-weight: 600;
+  background: #3b82f6;
+  padding: 10px 20px;
+  border-radius: 8px;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  justify-content: center;
+  gap: 6px;
+  margin-top: auto;
+  transition: background 0.2s, transform 0.2s;
 }
 
 .projeto-card .info .link-projeto:hover {
-  text-decoration: underline;
+  background: #2563eb;
+  transform: translateY(-1px);
 }
 
 .projeto-card.destaque {
