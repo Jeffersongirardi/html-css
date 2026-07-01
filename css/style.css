@@ -325,6 +325,36 @@ section {
   text-decoration: underline;
 }
 
+.projeto-card.destaque {
+  border-color: #3b82f6;
+  position: relative;
+  background: linear-gradient(135deg, #16161f 0%, #1a1a2e 100%);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+}
+
+.projeto-card.destaque:hover {
+  box-shadow: 0 0 40px rgba(59, 130, 246, 0.3);
+  transform: translateY(-4px);
+}
+
+.projeto-card.destaque .info h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.destaque-badge {
+  font-size: 0.65rem;
+  background: #3b82f6;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 /* Contato */
 #contato {
   background: #0f0f16;
